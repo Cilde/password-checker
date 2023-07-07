@@ -1,7 +1,11 @@
 import string
 from time import *
 
+
+print("ETHAN'S PASSWORD CHECKER!")
+print("")
 password = input("Please enter the password you desire to check:")
+print("")
 
 upper_case = any([1 if c in string.ascii_uppercase else 0 for c in password])
 lower_case = any([1 if c in string.ascii_lowercase else 0 for c in password])
@@ -13,14 +17,6 @@ characters = [upper_case, lower_case, special, digits]
 length = len(password)
 
 score = 0
-
-with open('commonpasswords.txt', 'r') as f:
-    common = f.read().splitlines()
-
-if password in common:
-    print("Password was found in a common list. Score reset to 0.")
-    sleep(5)
-    
     
 if length > 8:
     score += 1
@@ -50,11 +46,9 @@ elif score > 4 and score < 6:
 elif score > 6:
     print(f"Your password is great! It is likely to not be cracked. Your score is {str(score)} / 7")
 
-sleep(5)
-print("Closing...")
+print('')
+print('----------------------')
+input('Press any key to exit.')
+print('----------------------')
+exit()
 
-pass
-pass
-pass
-pass
-pass
