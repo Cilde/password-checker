@@ -1,6 +1,9 @@
 # password-checker
 A basic password checker built in Python.
 
+LATEST UPDATE
+Updated to remove commonpasswords.txt as it caused issues on certain Windows systems being unable to find the file.
+
 HOW TO RUN
 
 Windows Instructions
