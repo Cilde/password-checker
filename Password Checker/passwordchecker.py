@@ -1,4 +1,5 @@
 import string
+from time import *
 
 password = input("Please enter the password you desire to check:")
 
@@ -18,7 +19,9 @@ with open('commonpasswords.txt', 'r') as f:
 
 if password in common:
     print("Password was found in a common list. Score reset to 0.")
-    exit()
+    sleep(5)
+    
+    
 if length > 8:
     score += 1
 if length > 12:
@@ -46,3 +49,12 @@ elif score > 4 and score < 6:
     print(f"Your password is good, it would be classed as secure! Your score is {str(score)} / 7")
 elif score > 6:
     print(f"Your password is great! It is likely to not be cracked. Your score is {str(score)} / 7")
+
+sleep(5)
+print("Closing...")
+
+pass
+pass
+pass
+pass
+pass
