@@ -48,7 +48,7 @@ elif score > 6:
 
 print('')
 print('----------------------')
-input('Press any key to exit.')
-print('----------------------')
+print('Press any key to exit.')
+input('----------------------')
 exit()
 
