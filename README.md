@@ -3,7 +3,7 @@ A basic password checker built in Python.
 
 LATEST UPDATE
 
-V1.2 - Added passwords.txt, please download this along side the python file and keep them in the same folder when running else the password checker will not work.
+V1.2 - Added passwords.txt, please download this along side the python file and keep them in the same folder when running else the password checker will not work. *IMPORTANT*
 
 OLDER UPDATES
 
